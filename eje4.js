@@ -1,11 +1,17 @@
 function entero_binario(num){
-    var aux = 0;
-    array = [0];
-    while(num != 0 || num !=1){
-        extra = num%2;
-        num = (num/2) - aux;
-        array.push(extra);
+    if(num < 2){
+        console.log(num);
     }
-    resultado = array.reverse().join("");
-    console.log(resultado);
+    else{
+        aux = (num%2).toString;
+        while(num>1){
+            if(num%2==1){
+                num = Math.round(num/2)-1;
+            }
+            else{
+                num = num/2;
+            }
+        }
+        console.log(aux);
+    }
 }
